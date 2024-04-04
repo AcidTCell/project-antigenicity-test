@@ -48,16 +48,17 @@ function analyzeData() {
 
     // Display the sequences of probable antigens
     let outputHTML = '';
-    if (Object.keys(sequences).length > 0) {
-        outputHTML += '<h2>Sequences of Probable Antigens:</h2>';
-        outputHTML += '<ul>';
-        Object.entries(sequences).forEach(([key, sequence]) => {
-            outputHTML += `<li>${key}: ${sequence}</li>`;
-        });
-        outputHTML += '</ul>';
-    } else {
-        outputHTML = 'No sequences found for probable antigens.';
-    }
+if (Object.keys(sequences).length > 0) {
+    outputHTML += '<h2>Sequences of Probable Antigens:</h2>';
+    outputHTML += '<table>';
+    outputHTML += '<tr><th>Probable Antigen</th><th>Sequence</th></tr>';
+    Object.entries(sequences).forEach(([key, sequence]) => {
+        outputHTML += `<tr><td>${key}</td><td>${sequence}</td></tr>`;
+    });
+    outputHTML += '</table>';
+} else {
+    outputHTML = 'No sequences found for probable antigens.';
+}
 
     document.getElementById('results').innerHTML = outputHTML;
 }
