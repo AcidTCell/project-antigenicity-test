@@ -9,24 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <div id="container">
         <div id="header">
             <h1>Antigen Analysis</h1>
         </div>
-        <form id="dataForm">
-            <label for="dataInput">Input Data:</label><br>
-            <textarea id="dataInput" name="dataInput" rows="10" cols="50"></textarea><br>
-            <button type="button" onclick="analyzeData()">Analyze Data</button>
-        </form>
+        <div id="inputBoxes">
+            <div class="groupInput">
+                <label for="probableAntigensInput">Probable Antigens:</label><br>
+                <textarea id="probableAntigensInput" name="probableAntigensInput" rows="10" cols="50"></textarea><br>
+            </div>
+            <div class="groupInput">
+                <label for="sequencesInput">Sequences:</label><br>
+                <textarea id="sequencesInput" name="sequencesInput" rows="10" cols="50"></textarea><br>
+            </div>
+        </div>
+        <button id="analyzeButton">Analyze Data</button>
         <div id="results"></div>
-
         <div id="footer">Copyright &copy; 2024 JKC The Odin Project</div>
-
     </div>
-
-    
 </body>
 </html>

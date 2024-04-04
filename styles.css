@@ -31,12 +31,12 @@ h1{
     
   }
 
-#dataForm{
+#inputBoxes{
     font-family: 'Nunito', sans-serif;
     padding-top: 1vh;
-    align-self: center;
-    
+    align-self: center;  
 }
+
 
 label{
     font-family: 'Nunito', sans-serif;
@@ -52,6 +52,10 @@ table {
 }
 
 #results{
+    font-family: 'Nunito', sans-serif;
+}
+
+#sequenceResults{
     font-family: 'Nunito', sans-serif;
 }
 th, td {
