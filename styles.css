@@ -1,6 +1,58 @@
+*{
+    margin: 0;    
+  }
+  
+body{
+    background-color: #dfdfdf;
+    height: 100vh;
+    
+  }
+
+#header{
+    display: flex;
+    background-color: #1c1c1c;
+    justify-content: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+h1{
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 6vh;
+  
+}
+  
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+    
+  }
+
+#dataForm{
+    font-family: 'Nunito', sans-serif;
+    
+    align-self: center;
+    
+}
+
+label{
+    font-family: 'Nunito', sans-serif;
+}
+
+button{
+    font-family: 'Nunito', sans-serif;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
+}
+
+#results{
+    font-family: 'Nunito', sans-serif;
 }
 th, td {
     border: 1px solid black;
@@ -9,4 +61,17 @@ th, td {
 }
 th {
     background-color: #f2f2f2;
+}
+
+#footer{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vh;
+    background-color: #1c1c1c;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-weight: bold;
+    color: white;
+    margin-top: auto;
+    
 }
